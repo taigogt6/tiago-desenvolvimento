@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRimeiros passos com dom</title>
+    <style>
+body{
+
+    background: lightcoral;
+}
+
+    </style>
+</head>
+
+<body>
+<h1>Apredendo a navegar </h1>
+    <p>primeiros passos de verdade</p>    
+    <p>Aqui temos <strong>várias</strong>  dias para se divertir</p>
+<div>Clique em mim</div>
+
+</body>
+<script>
+
+var p1=window.document.getElementsByTagName('p')[0]
+window.document.write(p1.innerText)// replica aquilo que ta no primeiro parágrafo
+window.document.write('<br>No primeiro parágrafo está escrito assim ' + p1. innerText)//outra forma de escrita
+window.document.write(p1.innerHTML)
+p1.style.color='white' 
+var corpo=window.document.body
+corpo.style.background='blue' 
+
+
+// perceba com o parágrafo 1
+
+var p2=window.document.getElementsByTagName('p')[1]
+window.document.write(p2.innerText)
+window.document.write(p2.innerHTML)
+window.alert(p2.innerText)
+window.alert(p2.innerHTML)
+
+p2.style.color='white'
+p2.style.textAlign='center'
+
+</script>
+
+</html>

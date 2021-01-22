@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tiago Vila-Nova">
+    <meta name="description" content="lista de documentos"> 
+    <meta name="keywords" content="html5,tecnologia">
+    <title>aprendendo html</title>
+    <style>
+        body{
+            background: rgb(238, 88, 88);
+            color: white;
+            font-size: 15pt;
+            text-align: center;
+        }
+        h1 {
+            color:black;
+            font-size: 40pt;
+            text-align: left;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+
+ <h1>Facilitando o entendimento de html</h1>
+    
+ <hr>
+
+   <h2>Quais os <strong>desafios</strong> que <em>pretendemos</em> encarar?</h2> 
+   <p>No ano <em>passado</em>, algumas <i>questões</i> precisavam <b>ser</b> entendidas. 
+    Com o passa do <strong>tempo</strong> essas <b>questões</b> foram consultadas no <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiAt7-h8oTuAhV5LLkGHZiDB2IQPAgI" target="_blanck" title="aprendendo html">google</a>, enfim tudo foi resolvido de verdade.
+    Mas, antes, precisamos resolver questões que serão listadas abaixo:  </p>
+
+    <ul>  <li>Quais questões vc quer resolver?</li>
+    <li>Será que é necessários mesmo?</li>
+<li>Busqye fundamentos na vida!</li> </ul>
+<hr> 
+<ol><li>repita esses questionamentos agora</li>
+<li>talvez assim somos fortes</li>
+<li>não pense em errar</li></ol>
+</body>
+
+<script>
+
+var nome=window.prompt('Informe o seu nome:')
+
+window.alert('Olá, seja bem-vindo! '+ nome.toLocaleUpperCase())
+
+document.write(`Agora ${nome.toLocaleUpperCase()}, por favor! Precisamos de algumas informações!`)
+document.write(`<br><br><br>O seu nome em minúsculo é ${nome.toLocaleLowerCase()}`)
+document.write(`<br><br><br>O seu nome possui ${nome.length} letras`)
+
+var peso1=Number.parseFloat(window.prompt('Agora digite o seu peso usual'))
+
+var peso2=Number.parseFloat(window.prompt('Agora digite o seu peso atual '))
+var Estatura=Number.parseFloat(window.prompt('Agora informe a sua estatura'))
+var mediapeso=(peso1+peso2)/2
+var media1=mediapeso+4
+media1++
+
+var imc=mediapeso/(Estatura*Estatura)
+
+
+
+document.write(`<br><br>A média do peso é: ${mediapeso.toFixed(1).replace('.',',')}`)
+document.write('<br><br>teste de atribuição ' + media1.toFixed(1).replace('.',','))
+document.write(`<br> O valor do índice de massa corporal é igual a: ${imc.toFixed(2).replace('.', ',')}`)
+
+</script>
+
+
+</html>

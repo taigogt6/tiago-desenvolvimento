@@ -1,0 +1,35 @@
+-- Joins
+
+-- Vendo as tabelas
+select * from livro;
+select * from estilo;
+
+--------------------------------------------------
+-- Tradicional INNER JOIN
+select l.titulo, e.nome
+from livro l, estilo e
+where e.id = l.estilo_id;
+
+-- Outra forma de INNER JOIN
+select titulo, nome
+from estilo INNER JOIN livro
+ON estilo.id = livro.estilo_id;
+
+-- INNER JOIN = CONDIÇÃO SATISFEITA de ambos os lados!
+
+
+--------------------------------------------------
+-- OUTER JOIN
+select titulo, nome
+from estilo LEFT OUTER JOIN livro
+ON estilo.id = livro.estilo_id;
+
+select  titulo, nome
+from livro LEFT OUTER JOIN estilo
+ON estilo.id = livro.estilo_id;
+
+-- LEFT OUTER JOIN = MOSTRA MESMO QUE SEJA NULL!!!!!!!!!!!!!!
+
+
+
+

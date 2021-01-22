@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+
+            font: normal 20 pt arial;
+        }
+    </style>
+</head>
+<body>
+    
+ <script>
+<!--
+    
+    //Declaração de variaveis
+
+    var nome
+    var idade
+    var peso
+    var altura
+    var cc 
+    var cb 
+    var pt 
+    var nee
+    var tmb 
+    var pa 
+    var imc
+    var cmb  
+    var pas 
+    var pad
+    
+
+    // Entrada dos dados
+
+    nome =   window.prompt('Por favor, informe o primeiro nome do paciente: ')
+    window.alert(`Agora vamos precisar de algumas informações sobre ${nome.toUpperCase()}`   )
+    idade=Number.parseInt(window.prompt('Idade: '))
+    peso=Number.parseFloat(window.prompt('Peso (kg)'))
+    altura=Number.parseFloat(window.prompt('Altura (m)'))
+    cc = Number.parseFloat(window.prompt('Circunferência da cintura (Cm) '))
+    cb = Number.parseFloat(window.prompt('Circunferência do braço (Cm)'))
+    pt = Number.parseFloat(window.prompt('Prega cutânea triciptal (mm)'))
+    pas = Number.parseInt(window.prompt('Pressão arterial sistônica'))
+    pad = Number.parseInt(window.prompt('Pressão arterial diastólica'))
+    
+    
+    // Processamento
+    imc = peso/(altura*altura)
+    cmb = cb - (pt * 0.31416)
+    
+    // Saínda
+    document.write(`Abaixo estão contidas as informações do <strong>${nome.toUpperCase()}</strong><br><br> 
+    <strong>IMC(kg/m²)</strong> =${imc.toFixed(2).replace('.', ',')}  <br><br> 
+    <strong> Circunferência do braço (cm)</strong> =${cb.toFixed(2)} <br><br>
+    <strong> Prega cutânea triciptal</strong> (cm)= ${pt} <br><br>
+    <strong>Circunferência muscular do braço(cm)</strong> = ${cmb.toFixed(2).replace('.', ',')} <br><br>
+    <strong> Circunferência da cintura(cm)</strong>=${cc}<br><br>
+    <strong>Pressão Arterial (mmHg)</strong>=${pas}/${pad}
+
+     ` ) 
+
+    
+
+    
+    -->
+
+
+
+ </script>   
+</body>
+</html>

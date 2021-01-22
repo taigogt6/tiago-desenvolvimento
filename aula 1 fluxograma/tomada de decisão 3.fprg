@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Tiago Vila-Nova"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-22 05:15:32 "/>
+        <attribute name="created" value="VGlhZ28gVmlsYS1Ob3ZhO0RFU0tUT1AtVktETkxDTTsyMDIwLTExLTIyOyIwNTowMjozNCAiOzM2NjY="/>
+        <attribute name="edited" value="VGlhZ28gVmlsYS1Ob3ZhO0RFU0tUT1AtVktETkxDTTsyMDIwLTExLTIyOyIwNToxNTozMiAiOzI7Mzc3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, mar&#231;o, abril, media" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="mar&#231;o"/>
+            <input variable="abril"/>
+            <assign variable="media" expression="(janeiro + fevereiro + mar&#231;o + abril)"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;5000">
+                <then>
+                    <output expression="&quot;parab&#233;ns o senhor vai receber abono de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;o senhor vai receber apenas 3% de abono&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

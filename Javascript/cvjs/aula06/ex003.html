@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {background-color: rgb(215, 215, 238);
+        color:white;
+        font:normal 25pt arial;
+        }
+        h1{
+color: rgb(197, 197, 169) 
+
+        }
+
+    </style>
+</head>
+<body>
+   <h1>pROGRAMA DE CONCATENAÇÃO</h1>
+   <p>conteúdo</p>
+
+<script>
+
+ var n1 = window.prompt('Digite um número: ') // O comando window.prompt recebe string
+ var n2 = window.prompt('Digite outro número: ') // O comando window.prompt recebe string
+ var s=n1+n2
+ window.alert('A soma dos dois valores é ' + s)/* observe que isso faz uma concatenação pois são strings. Para fazer soma
+ é necessário que as variaveis sejam do tipo number. paraisso podemos usar o Number.parseInt(n) ou
+ Number.parseFloat(n)... verifique o exemplo abaixo*/
+
+ var n1 = Number.parseInt(window.prompt('Digite um número: ')) // O comando window.prompt recebe string
+var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // O comando window.prompt recebe string
+ var s=n1+n2
+ window.alert('A soma dos dois valores é ' + s)
+// verifique que esse resultado é para valores inteiros o parseint é para isso.
+
+var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // O comando window.prompt recebe string
+var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // O comando window.prompt recebe string
+ var s=n1+n2
+ window.alert('A soma dos dois valores é ' + s)
+//verifique que o resultado da um valor real
+
+ var n1 = Number(window.prompt('Digite um número: ')) // O comando window.prompt recebe string
+var n2 = Number(window.prompt('Digite outro número: ')) // O comando window.prompt recebe string
+ var s=n1+n2
+ window.alert('A soma dos dois valores é ' + s)
+
+ /*observe que quando colocamos o tipo number o vscode decide como vai trabalhar, se´e com número real ou
+ inteiro*/
+
+
+
+
+ var n1 = Number(window.prompt('Digite um número: ')) // O comando window.prompt recebe string
+var n2 = Number(window.prompt('Digite outro número: ')) // O comando window.prompt recebe string
+ var s=n1+n2
+ window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) 
+ // Observe que usei o templacestring por meio do place roder
+
+ var n1 = Number(window.prompt('Digite um número: ')) // O comando window.prompt recebe string
+var n2 = Number(window.prompt('Digite outro número: ')) // O comando window.prompt recebe string
+ var s=n1+n2
+ window.alert('A soma dos dois valores é ' + String(s)) // observe que transformei a variavel S em string
+
+
+ 
+</script>
+
+
+
+</body>
+</html>

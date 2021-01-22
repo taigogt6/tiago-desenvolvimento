@@ -1,0 +1,23 @@
+body{
+    text-align: justify;
+    background-color: rgb(141, 240, 101);
+    margin-left: 20px;
+
+}
+
+h1{
+    text-align: center;
+}
+
+form.form-example{
+    display: table-row;
+}
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+
+}
+
+label{
+    padding-right: 10px;
+}

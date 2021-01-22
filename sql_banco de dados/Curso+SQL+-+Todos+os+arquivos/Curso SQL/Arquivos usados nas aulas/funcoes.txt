@@ -1,0 +1,55 @@
+-- 14 Funções
+
+-- ifnull
+select titulo, estilo_id
+from livro;
+
+select titulo, ifnull(estilo_id,"Falta Código do Estilo")
+from livro;
+
+
+-- length
+Select length("Tiago");
+select titulo, length(titulo) as "Tamanho do Título"
+ from livro where id=1;
+
+-- lower
+select lower(titulo) from livro where id=1;
+
+-- upper()
+select upper(titulo) from livro where id=1;
+
+-- substr(x,y,z)
+select substr("Curso de SQL",3,3);
+select substr("Curso de SQL",8,2);
+
+-- random()
+select random();
+select titulo, substr(random(),3,3) as codigo_inventado
+from livro;
+
+-- The replace(X,Y,Z) 
+select replace("Curso de SQL"," ","---");
+
+-- round(x)
+select titulo, precovenda from livro;
+select titulo, round(precovenda,1) from livro;
+
+-- trim() _remove espçaos do início e fim
+select trim("     Curso  _    de      _     S  Q L       ");
+
+-- rtrim()
+select rtrim("     Curso  _    de      _     S  Q L       ");
+
+-- ltrim()
+select ltrim("     Curso  _    de      _     S  Q L       ");
+
+-- typeof()
+select typeof(1.1);
+select typeof(" ");
+
+-- date('now');
+select date('now');
+
+-- sqlite_version
+select sqlite_version();

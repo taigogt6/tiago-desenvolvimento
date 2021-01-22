@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo do IMC</title>
+    <style>
+        body{
+            background: rgb(235, 227, 227);
+        }
+
+    </style>
+</head>
+<body>
+ <p>Insira o valor do seu peso:</p>   
+<input type="number" name="peso" id="peso"> 
+<p>Agora insira o valor da sua altura:</p><input type="number" name="altura" id="altura">
+<input type="button" value="calcular" onclick="calcular()">
+<div id='res'><br>Resultado</div>
+
+</body>
+
+<script>
+
+function calcular(){
+
+var peso=window.document.getElementById('peso')
+var altura=window.document.getElementById('altura')
+var res=window.document.getElementById('res')
+var p=Number(peso.value)
+var a=Number(altura.value)
+var imc= p/(a*a)
+res.innerHTML=` <br> Conforme o valor de peso igual a ${p} e a altura ao quadrado ${a}, o valor do IMC é igual a 
+${imc.toFixed(2)}`
+}
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+body{
+
+    color:white;
+    background: rgb(236, 109, 109);
+    font: normal 18pt Arial;
+}
+
+    </style>
+</head>
+<body>
+    <h1>aprendendo dom</h1>
+    <p>vamos aprender para ser gente</p>
+    <P>Vamos aprender para criar algo <strong>legal</strong></P>
+    <div id='dui'> clique aqui agora</div>
+
+<script>
+var p1 = window.document.getElementsByTagName('p')[1]
+window.document.write('<br>Está escrito assim: ' + p1.innerHTML)
+p1.style.color='blue'
+p1.innerText('aline')
+
+document.write(p1.innerHTML)
+var corpo=window.document.body
+corpo.style.background='black'
+        window.document.write('<br>Olá mundo!')
+        window.document.write(window.document.charset)
+        window.document.write(window.navigator.appName)
+        window.document.write(window.document.URL)
+
+        /* para não atrapahar os demais comandos 
+        var d = window.document.getElementById('dui')
+        d.style.background='green'
+        d.innerText='Estou aguardando... '
+            ou usa dessa forma
+        window.document.getElementById('dui').innerText='outro mundo!'        
+*/
+
+/*
+ apresentando aas formas de acesso de elementos 
+var d = window.document.getElementsByName('msg')[0]
+d.innerText='Olá!'
+window.document.getElementsByName*/
+
+var d= window.document.querySelector('div#dui')
+d.style.background='blue '
+</script>
+
+</body>
+
+</html>
